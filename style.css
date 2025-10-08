@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #002339;
+    color: #fff;
+}
+
+.container{
+    margin: 12%;
+    width: 90%;
+    max-width: 700px;
+}
+.display{
+    width: 100%;
+    background: #fff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.container h1 {
+    font-weight: 500;
+    font-size: 45px;
+}
+.container h1 span {
+    color: #019f55;
+    border-bottom: 4px solid #019f55;
+    padding-bottom: 7px;
+}
+.display img {
+    width: 30px;
+    cursor: pointer;
+}
+.display input {
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+}
+
+.container button img{
+    width: 28px;
+    margin-right: 10px;
+}
+.container button{
+    border: 0;
+    outline: 0;
+    background: #019f55;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 26px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+}
+
+.container button::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+}
+
+.container button::before {
+    content: "";
+    background: linear-gradient(45deg, #FF1900, #F07300 ,#FFEB00, #3CDB00,  #02D1C8, #002CE1  , #F222C2,  #FF1900 ) ;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+@keyframes glowing {
+    0% {background-position: 0 0; }
+    50% {background-position: 400% 0; }
+    100% {background-position: 0 0; }
+}
+
+.container button:hover::before {
+    opacity: 1;
+}
+.container button:active:after {
+    background: transparent;
+}
