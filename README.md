@@ -1,32 +1,44 @@
+# 🔐 Random Password Generator
 
-- **index.html** — main HTML file  
-- **style.css** — CSS styles  
-- **script.js** — JavaScript logic for password generation  
-- **assets/** — images or icons used in UI (if any)  
+**🎯 Live Demo:** [Click Here to Try It](https://mim515.github.io/Random-Password-Generator/)  
+
+A simple and responsive web application that allows users to generate secure, random passwords using different character types — uppercase letters, lowercase letters, numbers, and symbols. It’s lightweight, fast, and easy to use directly in your browser.
+
+---
+
+## 💡 Features
+
+- Generate random passwords instantly  
+- Choose password length  
+- Include or exclude uppercase, lowercase, numbers, and symbols  
+- One-click copy to clipboard  
+- Clean and minimal interface  
+- Works completely offline  
+
+---
 
 ## 🧠 How It Works
 
-1. The user sets desired password length and selects which character types (uppercase, lowercase, numbers, symbols) to include.  
-2. When the “Generate Password” button is clicked, the JavaScript script picks one character from each selected character set to ensure all types are included.  
-3. Then it fills the rest of the password by randomly picking from the combined allowed characters until it reaches the desired length.  
-4. The generated password is displayed on the page, with an option to click and copy it to the clipboard.  
+1. User selects the password length and character options.  
+2. The JavaScript function ensures each category (if selected) contributes at least one character.  
+3. Remaining characters are randomly chosen from all selected types.  
+4. The final password is displayed on screen and can be copied to clipboard with one click.
 
-## 🛠 Usage
+---
+## 🚀 How to Use
 
-1. Clone or download this repository.  
-2. Open `index.html` in your browser.  
-3. Select your desired options (length, types).  
-4. Click **Generate Password**.  
-5. Optionally click to copy the password.  
-6. Repeat as needed.
+1. Open the live demo:  
+   👉 [https://mim515.github.io/Random-Password-Generator/](https://mim515.github.io/Random-Password-Generator/)  
+2. Adjust settings for password length and character types.  
+3. Click **Generate Password**.  
+4. Copy it using the **Copy** button.  
+5. Repeat to create a new one anytime.
 
-## 📦 How to Run Locally
+---
 
-You don’t need a server — the app is static HTML/JS/CSS:
+## ⚙️ Run Locally
 
-```bash
-git clone https://github.com/mim515/Random-Password-Generator.git
-cd Random-Password-Generator
-open index.html
+You can also run it directly from your computer:
 
+Would you like me to add a small **preview image or screenshot section** at the top too (so it looks great on GitHub)?
 
